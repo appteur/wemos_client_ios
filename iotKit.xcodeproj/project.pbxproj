@@ -1,0 +1,994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E10775BD1FF7FCAE0089D1E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10775BC1FF7FCAE0089D1E5 /* AppDelegate.swift */; };
+		E10775BF1FF7FCAE0089D1E5 /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10775BE1FF7FCAE0089D1E5 /* DeviceListViewController.swift */; };
+		E10775C21FF7FCAE0089D1E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10775C01FF7FCAE0089D1E5 /* Main.storyboard */; };
+		E10775C41FF7FCAE0089D1E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E10775C31FF7FCAE0089D1E5 /* Assets.xcassets */; };
+		E10775C71FF7FCAE0089D1E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10775C51FF7FCAE0089D1E5 /* LaunchScreen.storyboard */; };
+		E10775D21FF7FCAE0089D1E5 /* iotKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10775D11FF7FCAE0089D1E5 /* iotKitTests.swift */; };
+		E10775DD1FF7FCAE0089D1E5 /* iotKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10775DC1FF7FCAE0089D1E5 /* iotKitUITests.swift */; };
+		E10775F11FF7FD440089D1E5 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10775F01FF7FD440089D1E5 /* IntentHandler.swift */; };
+		E10775FA1FF7FD440089D1E5 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E10775F91FF7FD440089D1E5 /* IntentsUI.framework */; };
+		E10775FD1FF7FD440089D1E5 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10775FC1FF7FD440089D1E5 /* IntentViewController.swift */; };
+		E10776001FF7FD440089D1E5 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E10775FE1FF7FD440089D1E5 /* MainInterface.storyboard */; };
+		E10776041FF7FD440089D1E5 /* SiriPluginUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E10775F71FF7FD440089D1E5 /* SiriPluginUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E10776071FF7FD440089D1E5 /* SiriPlugin.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E10775EE1FF7FD440089D1E5 /* SiriPlugin.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E10776111FF811C60089D1E5 /* INRequestDeviceIntentHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10776101FF811C60089D1E5 /* INRequestDeviceIntentHandling.swift */; };
+		E10776171FF8181B0089D1E5 /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10776161FF8181B0089D1E5 /* DeviceListViewModel.swift */; };
+		E107761C1FF818890089D1E5 /* IOTDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E107761B1FF818890089D1E5 /* IOTDevice.swift */; };
+		E10776201FF81D320089D1E5 /* DeviceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E107761F1FF81D320089D1E5 /* DeviceListTableViewCell.swift */; };
+		E10776221FF81D550089D1E5 /* DeviceListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10776211FF81D550089D1E5 /* DeviceListCellViewModel.swift */; };
+		E10776241FF826880089D1E5 /* WeMosAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10776231FF826880089D1E5 /* WeMosAPI.swift */; };
+		E10776261FF828ED0089D1E5 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10776251FF828ED0089D1E5 /* NetworkProvider.swift */; };
+		E10776281FF82A260089D1E5 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10776271FF82A260089D1E5 /* ApiRouter.swift */; };
+		E15D44671FF976460073FEE6 /* HubListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15D44661FF976460073FEE6 /* HubListViewController.swift */; };
+		E15D446A1FF9769D0073FEE6 /* NewHubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15D44691FF9769D0073FEE6 /* NewHubViewController.swift */; };
+		E15D446C1FF978D20073FEE6 /* NewHubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15D446B1FF978D20073FEE6 /* NewHubViewModel.swift */; };
+		E15D446E1FF978DD0073FEE6 /* HubListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15D446D1FF978DD0073FEE6 /* HubListViewModel.swift */; };
+		E15D44701FF979B80073FEE6 /* IOTHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15D446F1FF979B80073FEE6 /* IOTHub.swift */; };
+		E15D44721FF9824C0073FEE6 /* HubSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15D44711FF9824C0073FEE6 /* HubSerializer.swift */; };
+		E15D44741FF985F80073FEE6 /* UIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15D44731FF985F80073FEE6 /* UIProvider.swift */; };
+		E15D44761FF987830073FEE6 /* HubListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15D44751FF987830073FEE6 /* HubListCellViewModel.swift */; };
+		E15D44781FF987970073FEE6 /* HubListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15D44771FF987970073FEE6 /* HubListCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E10775CE1FF7FCAE0089D1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E10775B11FF7FCAE0089D1E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E10775B81FF7FCAE0089D1E5;
+			remoteInfo = iotKit;
+		};
+		E10775D91FF7FCAE0089D1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E10775B11FF7FCAE0089D1E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E10775B81FF7FCAE0089D1E5;
+			remoteInfo = iotKit;
+		};
+		E10776021FF7FD440089D1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E10775B11FF7FCAE0089D1E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E10775F61FF7FD440089D1E5;
+			remoteInfo = SiriPluginUI;
+		};
+		E10776051FF7FD440089D1E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E10775B11FF7FCAE0089D1E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E10775ED1FF7FD440089D1E5;
+			remoteInfo = SiriPlugin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E107760E1FF7FD440089D1E5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E10776071FF7FD440089D1E5 /* SiriPlugin.appex in Embed App Extensions */,
+				E10776041FF7FD440089D1E5 /* SiriPluginUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E10775B91FF7FCAE0089D1E5 /* iotKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iotKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10775BC1FF7FCAE0089D1E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E10775BE1FF7FCAE0089D1E5 /* DeviceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
+		E10775C11FF7FCAE0089D1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E10775C31FF7FCAE0089D1E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E10775C61FF7FCAE0089D1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E10775C81FF7FCAE0089D1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10775CD1FF7FCAE0089D1E5 /* iotKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iotKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10775D11FF7FCAE0089D1E5 /* iotKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iotKitTests.swift; sourceTree = "<group>"; };
+		E10775D31FF7FCAE0089D1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10775D81FF7FCAE0089D1E5 /* iotKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iotKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10775DC1FF7FCAE0089D1E5 /* iotKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iotKitUITests.swift; sourceTree = "<group>"; };
+		E10775DE1FF7FCAE0089D1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10775EE1FF7FD440089D1E5 /* SiriPlugin.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriPlugin.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10775F01FF7FD440089D1E5 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		E10775F21FF7FD440089D1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E10775F71FF7FD440089D1E5 /* SiriPluginUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SiriPluginUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E10775F91FF7FD440089D1E5 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		E10775FC1FF7FD440089D1E5 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		E10775FF1FF7FD440089D1E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E10776011FF7FD440089D1E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E107760F1FF7FDAD0089D1E5 /* iotKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iotKit.entitlements; sourceTree = "<group>"; };
+		E10776101FF811C60089D1E5 /* INRequestDeviceIntentHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INRequestDeviceIntentHandling.swift; sourceTree = "<group>"; };
+		E10776161FF8181B0089D1E5 /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
+		E107761B1FF818890089D1E5 /* IOTDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTDevice.swift; sourceTree = "<group>"; };
+		E107761F1FF81D320089D1E5 /* DeviceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListTableViewCell.swift; sourceTree = "<group>"; };
+		E10776211FF81D550089D1E5 /* DeviceListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListCellViewModel.swift; sourceTree = "<group>"; };
+		E10776231FF826880089D1E5 /* WeMosAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeMosAPI.swift; sourceTree = "<group>"; };
+		E10776251FF828ED0089D1E5 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		E10776271FF82A260089D1E5 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		E15D44661FF976460073FEE6 /* HubListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubListViewController.swift; sourceTree = "<group>"; };
+		E15D44691FF9769D0073FEE6 /* NewHubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHubViewController.swift; sourceTree = "<group>"; };
+		E15D446B1FF978D20073FEE6 /* NewHubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHubViewModel.swift; sourceTree = "<group>"; };
+		E15D446D1FF978DD0073FEE6 /* HubListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubListViewModel.swift; sourceTree = "<group>"; };
+		E15D446F1FF979B80073FEE6 /* IOTHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOTHub.swift; sourceTree = "<group>"; };
+		E15D44711FF9824C0073FEE6 /* HubSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubSerializer.swift; sourceTree = "<group>"; };
+		E15D44731FF985F80073FEE6 /* UIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIProvider.swift; sourceTree = "<group>"; };
+		E15D44751FF987830073FEE6 /* HubListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubListCellViewModel.swift; sourceTree = "<group>"; };
+		E15D44771FF987970073FEE6 /* HubListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubListCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E10775B61FF7FCAE0089D1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10775CA1FF7FCAE0089D1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10775D51FF7FCAE0089D1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10775EB1FF7FD440089D1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10775F41FF7FD440089D1E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10775FA1FF7FD440089D1E5 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E10775B01FF7FCAE0089D1E5 = {
+			isa = PBXGroup;
+			children = (
+				E10775BB1FF7FCAE0089D1E5 /* iotKit */,
+				E10775D01FF7FCAE0089D1E5 /* iotKitTests */,
+				E10775DB1FF7FCAE0089D1E5 /* iotKitUITests */,
+				E10775EF1FF7FD440089D1E5 /* SiriPlugin */,
+				E10775FB1FF7FD440089D1E5 /* SiriPluginUI */,
+				E10775F81FF7FD440089D1E5 /* Frameworks */,
+				E10775BA1FF7FCAE0089D1E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E10775BA1FF7FCAE0089D1E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E10775B91FF7FCAE0089D1E5 /* iotKit.app */,
+				E10775CD1FF7FCAE0089D1E5 /* iotKitTests.xctest */,
+				E10775D81FF7FCAE0089D1E5 /* iotKitUITests.xctest */,
+				E10775EE1FF7FD440089D1E5 /* SiriPlugin.appex */,
+				E10775F71FF7FD440089D1E5 /* SiriPluginUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E10775BB1FF7FCAE0089D1E5 /* iotKit */ = {
+			isa = PBXGroup;
+			children = (
+				E10776121FF814DF0089D1E5 /* Source */,
+				E107760F1FF7FDAD0089D1E5 /* iotKit.entitlements */,
+				E10775BC1FF7FCAE0089D1E5 /* AppDelegate.swift */,
+				E10775C01FF7FCAE0089D1E5 /* Main.storyboard */,
+				E10775C31FF7FCAE0089D1E5 /* Assets.xcassets */,
+				E10775C51FF7FCAE0089D1E5 /* LaunchScreen.storyboard */,
+				E10775C81FF7FCAE0089D1E5 /* Info.plist */,
+			);
+			path = iotKit;
+			sourceTree = "<group>";
+		};
+		E10775D01FF7FCAE0089D1E5 /* iotKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				E10775D11FF7FCAE0089D1E5 /* iotKitTests.swift */,
+				E10775D31FF7FCAE0089D1E5 /* Info.plist */,
+			);
+			path = iotKitTests;
+			sourceTree = "<group>";
+		};
+		E10775DB1FF7FCAE0089D1E5 /* iotKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E10775DC1FF7FCAE0089D1E5 /* iotKitUITests.swift */,
+				E10775DE1FF7FCAE0089D1E5 /* Info.plist */,
+			);
+			path = iotKitUITests;
+			sourceTree = "<group>";
+		};
+		E10775EF1FF7FD440089D1E5 /* SiriPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				E10775F01FF7FD440089D1E5 /* IntentHandler.swift */,
+				E10775F21FF7FD440089D1E5 /* Info.plist */,
+				E10776101FF811C60089D1E5 /* INRequestDeviceIntentHandling.swift */,
+			);
+			path = SiriPlugin;
+			sourceTree = "<group>";
+		};
+		E10775F81FF7FD440089D1E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E10775F91FF7FD440089D1E5 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E10775FB1FF7FD440089D1E5 /* SiriPluginUI */ = {
+			isa = PBXGroup;
+			children = (
+				E10775FC1FF7FD440089D1E5 /* IntentViewController.swift */,
+				E10775FE1FF7FD440089D1E5 /* MainInterface.storyboard */,
+				E10776011FF7FD440089D1E5 /* Info.plist */,
+			);
+			path = SiriPluginUI;
+			sourceTree = "<group>";
+		};
+		E10776121FF814DF0089D1E5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E10776191FF8185B0089D1E5 /* Data */,
+				E10776141FF817E10089D1E5 /* UI */,
+				E10776131FF814E90089D1E5 /* API */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		E10776131FF814E90089D1E5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E10776271FF82A260089D1E5 /* ApiRouter.swift */,
+				E10776231FF826880089D1E5 /* WeMosAPI.swift */,
+				E10776251FF828ED0089D1E5 /* NetworkProvider.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E10776141FF817E10089D1E5 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E107761D1FF81D050089D1E5 /* Views */,
+				E10776151FF817E60089D1E5 /* ViewControllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E10776151FF817E60089D1E5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E15D44681FF9768B0073FEE6 /* NewHub */,
+				E15D44651FF976260073FEE6 /* HubList */,
+				E10776181FF818240089D1E5 /* DeviceList */,
+				E15D44731FF985F80073FEE6 /* UIProvider.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E10776181FF818240089D1E5 /* DeviceList */ = {
+			isa = PBXGroup;
+			children = (
+				E10775BE1FF7FCAE0089D1E5 /* DeviceListViewController.swift */,
+				E10776161FF8181B0089D1E5 /* DeviceListViewModel.swift */,
+			);
+			path = DeviceList;
+			sourceTree = "<group>";
+		};
+		E10776191FF8185B0089D1E5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E107761A1FF818660089D1E5 /* Models */,
+				E15D44711FF9824C0073FEE6 /* HubSerializer.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E107761A1FF818660089D1E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E107761B1FF818890089D1E5 /* IOTDevice.swift */,
+				E15D446F1FF979B80073FEE6 /* IOTHub.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E107761D1FF81D050089D1E5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E107761E1FF81D0B0089D1E5 /* DeviceListCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E107761E1FF81D0B0089D1E5 /* DeviceListCell */ = {
+			isa = PBXGroup;
+			children = (
+				E107761F1FF81D320089D1E5 /* DeviceListTableViewCell.swift */,
+				E10776211FF81D550089D1E5 /* DeviceListCellViewModel.swift */,
+			);
+			path = DeviceListCell;
+			sourceTree = "<group>";
+		};
+		E15D44651FF976260073FEE6 /* HubList */ = {
+			isa = PBXGroup;
+			children = (
+				E15D44661FF976460073FEE6 /* HubListViewController.swift */,
+				E15D446D1FF978DD0073FEE6 /* HubListViewModel.swift */,
+				E15D44751FF987830073FEE6 /* HubListCellViewModel.swift */,
+				E15D44771FF987970073FEE6 /* HubListCollectionViewCell.swift */,
+			);
+			path = HubList;
+			sourceTree = "<group>";
+		};
+		E15D44681FF9768B0073FEE6 /* NewHub */ = {
+			isa = PBXGroup;
+			children = (
+				E15D44691FF9769D0073FEE6 /* NewHubViewController.swift */,
+				E15D446B1FF978D20073FEE6 /* NewHubViewModel.swift */,
+			);
+			path = NewHub;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E10775B81FF7FCAE0089D1E5 /* iotKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10775E11FF7FCAE0089D1E5 /* Build configuration list for PBXNativeTarget "iotKit" */;
+			buildPhases = (
+				E10775B51FF7FCAE0089D1E5 /* Sources */,
+				E10775B61FF7FCAE0089D1E5 /* Frameworks */,
+				E10775B71FF7FCAE0089D1E5 /* Resources */,
+				E107760E1FF7FD440089D1E5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E10776031FF7FD440089D1E5 /* PBXTargetDependency */,
+				E10776061FF7FD440089D1E5 /* PBXTargetDependency */,
+			);
+			name = iotKit;
+			productName = iotKit;
+			productReference = E10775B91FF7FCAE0089D1E5 /* iotKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E10775CC1FF7FCAE0089D1E5 /* iotKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10775E41FF7FCAE0089D1E5 /* Build configuration list for PBXNativeTarget "iotKitTests" */;
+			buildPhases = (
+				E10775C91FF7FCAE0089D1E5 /* Sources */,
+				E10775CA1FF7FCAE0089D1E5 /* Frameworks */,
+				E10775CB1FF7FCAE0089D1E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E10775CF1FF7FCAE0089D1E5 /* PBXTargetDependency */,
+			);
+			name = iotKitTests;
+			productName = iotKitTests;
+			productReference = E10775CD1FF7FCAE0089D1E5 /* iotKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E10775D71FF7FCAE0089D1E5 /* iotKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10775E71FF7FCAE0089D1E5 /* Build configuration list for PBXNativeTarget "iotKitUITests" */;
+			buildPhases = (
+				E10775D41FF7FCAE0089D1E5 /* Sources */,
+				E10775D51FF7FCAE0089D1E5 /* Frameworks */,
+				E10775D61FF7FCAE0089D1E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E10775DA1FF7FCAE0089D1E5 /* PBXTargetDependency */,
+			);
+			name = iotKitUITests;
+			productName = iotKitUITests;
+			productReference = E10775D81FF7FCAE0089D1E5 /* iotKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E10775ED1FF7FD440089D1E5 /* SiriPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E107760B1FF7FD440089D1E5 /* Build configuration list for PBXNativeTarget "SiriPlugin" */;
+			buildPhases = (
+				E10775EA1FF7FD440089D1E5 /* Sources */,
+				E10775EB1FF7FD440089D1E5 /* Frameworks */,
+				E10775EC1FF7FD440089D1E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriPlugin;
+			productName = SiriPlugin;
+			productReference = E10775EE1FF7FD440089D1E5 /* SiriPlugin.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E10775F61FF7FD440089D1E5 /* SiriPluginUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E10776081FF7FD440089D1E5 /* Build configuration list for PBXNativeTarget "SiriPluginUI" */;
+			buildPhases = (
+				E10775F31FF7FD440089D1E5 /* Sources */,
+				E10775F41FF7FD440089D1E5 /* Frameworks */,
+				E10775F51FF7FD440089D1E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiriPluginUI;
+			productName = SiriPluginUI;
+			productReference = E10775F71FF7FD440089D1E5 /* SiriPluginUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E10775B11FF7FCAE0089D1E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Arnott Industries, Inc.";
+				TargetAttributes = {
+					E10775B81FF7FCAE0089D1E5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					E10775CC1FF7FCAE0089D1E5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E10775B81FF7FCAE0089D1E5;
+					};
+					E10775D71FF7FCAE0089D1E5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E10775B81FF7FCAE0089D1E5;
+					};
+					E10775ED1FF7FD440089D1E5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					E10775F61FF7FD440089D1E5 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E10775B41FF7FCAE0089D1E5 /* Build configuration list for PBXProject "iotKit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E10775B01FF7FCAE0089D1E5;
+			productRefGroup = E10775BA1FF7FCAE0089D1E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E10775B81FF7FCAE0089D1E5 /* iotKit */,
+				E10775CC1FF7FCAE0089D1E5 /* iotKitTests */,
+				E10775D71FF7FCAE0089D1E5 /* iotKitUITests */,
+				E10775ED1FF7FD440089D1E5 /* SiriPlugin */,
+				E10775F61FF7FD440089D1E5 /* SiriPluginUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E10775B71FF7FCAE0089D1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10775C71FF7FCAE0089D1E5 /* LaunchScreen.storyboard in Resources */,
+				E10775C41FF7FCAE0089D1E5 /* Assets.xcassets in Resources */,
+				E10775C21FF7FCAE0089D1E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10775CB1FF7FCAE0089D1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10775D61FF7FCAE0089D1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10775EC1FF7FD440089D1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10775F51FF7FD440089D1E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10776001FF7FD440089D1E5 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E10775B51FF7FCAE0089D1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E15D44721FF9824C0073FEE6 /* HubSerializer.swift in Sources */,
+				E15D446E1FF978DD0073FEE6 /* HubListViewModel.swift in Sources */,
+				E15D44781FF987970073FEE6 /* HubListCollectionViewCell.swift in Sources */,
+				E10776221FF81D550089D1E5 /* DeviceListCellViewModel.swift in Sources */,
+				E15D44701FF979B80073FEE6 /* IOTHub.swift in Sources */,
+				E15D44741FF985F80073FEE6 /* UIProvider.swift in Sources */,
+				E15D446C1FF978D20073FEE6 /* NewHubViewModel.swift in Sources */,
+				E10776201FF81D320089D1E5 /* DeviceListTableViewCell.swift in Sources */,
+				E15D44671FF976460073FEE6 /* HubListViewController.swift in Sources */,
+				E10776261FF828ED0089D1E5 /* NetworkProvider.swift in Sources */,
+				E10776241FF826880089D1E5 /* WeMosAPI.swift in Sources */,
+				E10776281FF82A260089D1E5 /* ApiRouter.swift in Sources */,
+				E10776171FF8181B0089D1E5 /* DeviceListViewModel.swift in Sources */,
+				E10775BF1FF7FCAE0089D1E5 /* DeviceListViewController.swift in Sources */,
+				E15D446A1FF9769D0073FEE6 /* NewHubViewController.swift in Sources */,
+				E107761C1FF818890089D1E5 /* IOTDevice.swift in Sources */,
+				E15D44761FF987830073FEE6 /* HubListCellViewModel.swift in Sources */,
+				E10775BD1FF7FCAE0089D1E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10775C91FF7FCAE0089D1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10775D21FF7FCAE0089D1E5 /* iotKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10775D41FF7FCAE0089D1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10775DD1FF7FCAE0089D1E5 /* iotKitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10775EA1FF7FD440089D1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10775F11FF7FD440089D1E5 /* IntentHandler.swift in Sources */,
+				E10776111FF811C60089D1E5 /* INRequestDeviceIntentHandling.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E10775F31FF7FD440089D1E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10775FD1FF7FD440089D1E5 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E10775CF1FF7FCAE0089D1E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E10775B81FF7FCAE0089D1E5 /* iotKit */;
+			targetProxy = E10775CE1FF7FCAE0089D1E5 /* PBXContainerItemProxy */;
+		};
+		E10775DA1FF7FCAE0089D1E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E10775B81FF7FCAE0089D1E5 /* iotKit */;
+			targetProxy = E10775D91FF7FCAE0089D1E5 /* PBXContainerItemProxy */;
+		};
+		E10776031FF7FD440089D1E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E10775F61FF7FD440089D1E5 /* SiriPluginUI */;
+			targetProxy = E10776021FF7FD440089D1E5 /* PBXContainerItemProxy */;
+		};
+		E10776061FF7FD440089D1E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E10775ED1FF7FD440089D1E5 /* SiriPlugin */;
+			targetProxy = E10776051FF7FD440089D1E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E10775C01FF7FCAE0089D1E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E10775C11FF7FCAE0089D1E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E10775C51FF7FCAE0089D1E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E10775C61FF7FCAE0089D1E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E10775FE1FF7FD440089D1E5 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E10775FF1FF7FD440089D1E5 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E10775DF1FF7FCAE0089D1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E10775E01FF7FCAE0089D1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E10775E21FF7FCAE0089D1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iotKit/iotKit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9878X2D5;
+				INFOPLIST_FILE = iotKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aii.iotKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E10775E31FF7FCAE0089D1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iotKit/iotKit.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9878X2D5;
+				INFOPLIST_FILE = iotKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aii.iotKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E10775E51FF7FCAE0089D1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9878X2D5;
+				INFOPLIST_FILE = iotKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aii.iotKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iotKit.app/iotKit";
+			};
+			name = Debug;
+		};
+		E10775E61FF7FCAE0089D1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9878X2D5;
+				INFOPLIST_FILE = iotKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aii.iotKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iotKit.app/iotKit";
+			};
+			name = Release;
+		};
+		E10775E81FF7FCAE0089D1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9878X2D5;
+				INFOPLIST_FILE = iotKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aii.iotKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iotKit;
+			};
+			name = Debug;
+		};
+		E10775E91FF7FCAE0089D1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9878X2D5;
+				INFOPLIST_FILE = iotKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aii.iotKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iotKit;
+			};
+			name = Release;
+		};
+		E10776091FF7FD440089D1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9878X2D5;
+				INFOPLIST_FILE = SiriPluginUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aii.iotKit.SiriPluginUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E107760A1FF7FD440089D1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9878X2D5;
+				INFOPLIST_FILE = SiriPluginUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aii.iotKit.SiriPluginUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E107760C1FF7FD440089D1E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9878X2D5;
+				INFOPLIST_FILE = SiriPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aii.iotKit.SiriPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E107760D1FF7FD440089D1E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GU9878X2D5;
+				INFOPLIST_FILE = SiriPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aii.iotKit.SiriPlugin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E10775B41FF7FCAE0089D1E5 /* Build configuration list for PBXProject "iotKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10775DF1FF7FCAE0089D1E5 /* Debug */,
+				E10775E01FF7FCAE0089D1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10775E11FF7FCAE0089D1E5 /* Build configuration list for PBXNativeTarget "iotKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10775E21FF7FCAE0089D1E5 /* Debug */,
+				E10775E31FF7FCAE0089D1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10775E41FF7FCAE0089D1E5 /* Build configuration list for PBXNativeTarget "iotKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10775E51FF7FCAE0089D1E5 /* Debug */,
+				E10775E61FF7FCAE0089D1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10775E71FF7FCAE0089D1E5 /* Build configuration list for PBXNativeTarget "iotKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10775E81FF7FCAE0089D1E5 /* Debug */,
+				E10775E91FF7FCAE0089D1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E10776081FF7FD440089D1E5 /* Build configuration list for PBXNativeTarget "SiriPluginUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E10776091FF7FD440089D1E5 /* Debug */,
+				E107760A1FF7FD440089D1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E107760B1FF7FD440089D1E5 /* Build configuration list for PBXNativeTarget "SiriPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E107760C1FF7FD440089D1E5 /* Debug */,
+				E107760D1FF7FD440089D1E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E10775B11FF7FCAE0089D1E5 /* Project object */;
+}
